@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>软件测试第七天</title>
+		<!-- <link rel="stylesheet" type="text/css" href=""/> -->
+		<style type="text/css">
+			input{width: auto;}
+		</style>
+	</head>
+	<body>
+		
+		<form action="" method="get">
+			
+			<!-- 数据列表标签 
+				 input中要设置list属性值=datalist标签中id属性值，才能把输入框和下拉菜单关联起来 -->
+			请填写您的优势Success：<input type="text" placeholder="可自行输入任意内容" list="advs" />
+			<datalist id="advs">
+				<option>窈窕淑女</option>
+				<option>温文尔雅</option>
+				<option>术业有专攻</option>
+				<option>坚韧不拔</option>
+				<option>精益求精</option>
+			</datalist>
+			<br /><br />
+			请填写您的劣势Weakness：<input type="text" placeholder="可自行输入任意内容" list="disas" />
+			<datalist id="disas">
+				<option>碌碌无为</option>
+				<option>三心二意</option>
+				<option>自由散漫</option>
+				<option>定力不足</option>
+				<option>横行霸道</option>
+			</datalist>
+			<br /><br />
+			
+			<input type="submit" value="开始分析" />		
+		</form>
+	</body>
+</html>

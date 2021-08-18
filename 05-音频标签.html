@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>软件测试第七天</title>
+		<style type="text/css">
+			audio{margin: 5px 8px;}
+		</style>
+	</head>
+	<body>
+		<!-- 音频1：<audio src="audio/001.oga" controls="controls"></audio><br />
+		音频2：<audio src="audio/001.mp3" controls="controls" autoplay="autoplay" loop="loop"></audio> -->
+		
+		<!-- 支持不同浏览器的兼容性设置 | 需将音频设置为不同格式加载到页面中 -->
+		<audio controls="controls" autoplay="autoplay" loop="loop">
+			<source src="audio/001.mp3"></source>
+			<source src="audio/001.oga"></source>
+		</audio>
+	</body>
+</html>

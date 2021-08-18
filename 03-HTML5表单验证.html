@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>软件测试第七天</title>
+		<style type="text/css">
+			input{width: 300px;}
+			.button{width: unset;}
+		</style>
+	</head>
+	<body>
+		<form action="xx.php" method="post">
+			
+			<!-- required属性 | 设置空判断 -->
+			<input type="text" placeholder="验证required-空判断" required="required" /><br><br>
+			
+			<!-- autofocus属性 | 自动获取焦点属性，免鼠标点击，提升用户体验 -->
+			<input type="text" placeholder="验证刷新后输入框内是否有光标" required="required" autofocus="autofocus" /><br><br>
+			
+			<!-- autocomplete属性 | 设置为on, 显示历史记录
+			     name属性值对应提交的数据所保存的文件夹一样的地方 -->
+			<input type="text" placeholder="验证autocomplete-display histories" required="required" autocomplete="on" name="第一历史记录" /><br><br>
+			<!-- name="第一历史记录" -->
+			
+			<input type="submit" value="提交" class="button" />
+		</form>
+	</body>
+</html>

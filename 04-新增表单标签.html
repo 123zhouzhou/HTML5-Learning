@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>软件测试第七天</title>
+		<style type="text/css">
+			header{
+				width: 500px;
+				border: aqua solid 5px;
+				padding: 40px 40px;
+				margin: 50px auto;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<form action="xx.php" method="post">
+				
+				<!-- input标签的不同属性 -->
+				邮箱：<input type="email" list="ema-addr" /><br /><br />
+				<datalist id="ema-addr">
+					<option>qwer@qq.com</option>
+					<option>asdf@qq.com</option>
+				</datalist>
+				网址：<input type="url" placeholder="要加上https://" autofocus="autofocus" autocomplete="on" name="账户1" /><br><br />
+				搜索：<input type="search" /><br /><br />
+				详细日期时间：<input type="datetime-local" /><br /><br />
+				Month:&nbsp;&nbsp;<input type="month" /><br /><br />
+				Week:&nbsp;&nbsp;<input type="week" /><br /><br />
+				Date:&nbsp;&nbsp;<input type="date" /><br /><br />
+				
+				滑块：<input type="range" /><br /><br />
+				<input type="submit" value="提交" />
+			</form>
+		</header>
+	</body>
+</html>

@@ -8,24 +8,28 @@
 			video{margin: 0 -5px;}
 		</style>
 	</head>
-	<body>
+	<body>		
 		<header>
-			这段音频是用什么语言说的？<br />
-			<input type="text" placeholder="有非空判断" required="required" list="language" autofocus="autofocus" autocomplete="on" />
-			<input type="reset"value="RESET" />
-			<datalist id="language">
-				<option>English</option>
-				<option>中文</option>
-			</datalist>
-			<br /><br />
+			这段音频是用什么语言说的？
+			<br />
+			<form action="" method="post">
+				<input type="text" placeholder="有非空判断" list="language" required="required"  autofocus="autofocus" autocomplete="on" name="first"/>
+				<datalist id="language">
+					<option>English</option>
+					<option>中文</option>
+				</datalist>
+				<input type="reset" value="RESET" />
+				<input type="submit" value="SUBMIT" />			
+				<br /><br />
+			</form>			
 			
 			请播放音频：
 			<audio controls="controls" loop="loop" autoplay="autoplay" >
 				<source src="audio/001.mp3"></source>
+				<source src="audio/001.oga"></source>
 			</audio>
 			
-			<input type="button" name="" id="" value="Nothing" />
-			
+			<input type="button" name="" id="" value="Nothing" />			
 		</header>
 		<br /><br />
 		
@@ -41,7 +45,6 @@
 				<!-- 浏览器无法识别以上视频时显示给用户看，用户可通过指定网址下载视频自行观看 -->
 				当前浏览器不支持video播放，点击这里下载：<a href="myvideo.mp4" target="_blank">Download Video</a>
 			</video>
-		</footer>
-		
+		</footer>		
 	</body>
 </html>
